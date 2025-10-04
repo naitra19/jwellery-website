@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuxeCAD - Jewellery Design Studio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ecb613",
+            "background-light": "#f8f8f6",
+            "background-dark": "#221d10",
+          },
+          fontFamily: {
+            "display": ["Newsreader", "serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .icon {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-primary/20 dark:border-primary/30">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<a class="flex items-center gap-3" href="#">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+<span class="text-2xl font-bold text-stone-900 dark:text-stone-100">LuxeCAD</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Process</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Testimonials</a>
+</nav>
+<div class="flex items-center gap-2">
+<a class="hidden sm:inline-block px-5 py-2.5 text-sm font-bold rounded-lg bg-primary/20 hover:bg-primary/30 dark:bg-primary/30 dark:hover:bg-primary/40 text-stone-900 dark:text-stone-100 transition-colors" href="#">Explore</a>
+<a class="px-5 py-2.5 text-sm font-bold rounded-lg bg-primary text-background-dark hover:opacity-90 transition-opacity" href="#">Get a Quote</a>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="relative h-[80vh] min-h-[480px] flex items-center justify-center text-center text-white">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdjf01g--UTS2okYjMAISyaG3YOTWLwt4HjdqAvW_fwdei8-G6QRVBKHKIhXttQzHbDa0PEg3J8K9TnCTKq9IjwtaqgM9CZRz8yqsVYpKG_AcdKBxU4XYN5AgIUcge_010ij22sOA4S62Z4ZE_1hs7a0YSP8IQxS4SYhTNoQMpan06RaLAsPYBCUre5hdRUhAe8to1tvfaeCLPD5OhjfdgUOsUTUor7FZ1OlXtM-8FQac9vC_6eEEJQJAX-9LiJoN8fXBBR2OPZds");'></div>
+<div class="absolute inset-0 bg-black/50"></div>
+<div class="relative z-10 p-6 flex flex-col items-center gap-6 max-w-3xl">
+<h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight">From Concept to Carat – Your Dream Jewellery in CAD</h1>
+<a class="px-8 py-4 text-base font-bold rounded-lg bg-primary text-background-dark hover:opacity-90 transition-opacity transform hover:scale-105" href="#">Get a Quote</a>
+</div>
+</section>
+<div class="container mx-auto px-6 py-16 sm:py-24">
+<div class="flex flex-col gap-16 sm:gap-24">
+<section>
+<h2 class="text-3xl font-bold text-center mb-12 text-stone-900 dark:text-stone-100">Portfolio Showcase</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6">
+<div class="group aspect-square rounded-lg overflow-hidden relative"><div class="w-full h-full bg-cover bg-center transform transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLgwWlfrAtm1nya6U58ePN9CbcqESRDqIevoz7UG74eQFu6OOgOe2Bau9DU1_j0NK_OWoov1yBLLUzAZO64u24JWXQZe9VuRfMnQaB-0Uuos47O5Ut518ybZ0fJ7MJt9VFCWREpo7ACmPLIGO73wDkIGseK4REKNcETWuVOQBYqRiDIfzFAm5PwbOSYdlqTTyVrqPKcuoOQ8vImLUJAoLNtlL90_dM1XfufnyhXqARO_w5XtZzvM7o4ynCpGzLUVueFqMQwKv1agc");'></div></div>
+<div class="group aspect-square rounded-lg overflow-hidden relative"><div class="w-full h-full bg-cover bg-center transform transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpkrDPzyE1Oee8lZUPXi0_6MU6TKvXM5FHssc8jHdnY_wPXM6cizQoFbB72KU8eyHhJ-RzK6i-mi58fwTD6SFI2t-TyY_CIYbA_7p7jWWNT3cwCrVcavLfEijeYaYiWRT3eauM6Esvp0linNAg4XRqdSG2LyEggCbVdub_jNBDaZ4rjTbx1nu7dbqqjIqNsJBZ7Djl1ijLaJ0HXLlnIEPtc9PQWJi8TymaIxTdlFIWZ6LZ926qyc2E73mmRAmdcZf-kAN9nFsqPzw");'></div></div>
+<div class="group aspect-square rounded-lg overflow-hidden relative"><div class="w-full h-full bg-cover bg-center transform transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNBMCk6781V_uYyLL6mcKP2qyA-aOhP1U04VSlmPLUsExgHn6zreyo5rc6W0OkRO8hQbjpAQytZrb6QI76nXhIBcj-IDcI53t6-HVXahb9X1tyrGjvkU98jQ6fefMAbqtdj-9eRB4RYlt2K1kpQ_5XFdqrMVmnmCyvh2i0J2l7BrD_IMhMk6l_13RDrgtb_9fMu4hWoRWfACs4kRTBTpY5pOoBwEayf0wivnhYvyUBe5glcNm0RgSi6rDYBgUan6rD496lNkPD2DE");'></div></div>
+<div class="group aspect-square rounded-lg overflow-hidden relative"><div class="w-full h-full bg-cover bg-center transform transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAiIQXz-MFBBmv_1n7vW3Ncf6Dpy6-OFAtysc5cVFs0dd2Ewt0m8WV72_VV5bp0S1Uww9gpU0U8jAVxkkbeTvKNvCitcyOeGAoScd2dUtsAUgMnTcMTHlB4Jzxdzb66Csz_0lTS1XsP2DZTG8WDl6RFDMRecLFeugo7N0e_sEriTsZnK9_htfoDoKP3iN2ZF743hLYSCCfoTzWFCEiqNp5RJ6oqkNhRseS7yWyqXeEjcR5l1lkcF5XAAle6xGUCwiRn2U3zBVKfasE");'></div></div>
+<div class="group aspect-square rounded-lg overflow-hidden relative"><div class="w-full h-full bg-cover bg-center transform transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAi8oNr1QDDixffSvqzSJ2ga9OWWArFzVO86eESfECdylWtXBNPPbgYuhHnYKRXmTZIPIp4-ZbG0kJjCw8Rxr1gXmP9UEqxQLX85sdEieYlqzGfCHbJ3JFemIC3mzjnM66nO71-N5_AWnU9PXMzejtxhXvpJ3Vai3cAHYFudpPrNVs8zDNy7HNJN_A6xhYLA7RRubNCFf3TQNDOovNkDA3NilNbVolxNBvyXbWnl7TnCOvI-TUga17DrcdNkSZpnU-xi5f_2_8sG88");'></div></div>
+<div class="group aspect-square rounded-lg overflow-hidden relative"><div class="w-full h-full bg-cover bg-center transform transition-transform duration-500 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOsUXvZGAlYRmKoICGFuJUOcvFR-qEQvDWIsQz4DwcS7EjdMTfgJTFTC-uHtBbFZHuIKlO24GDDpcyj-EnSvCEQz9z7PjhLl677S7s0cTyGOZCzW7JKdEojeFzceGQ2vgi3OmmI3ELFYikI8ZzyRv9zZBTt1i-MxZBxsNdHdIoSxF0PZ1i6bd7_UQIslUpqXDdYsSf611TcFp9zAlwJypWTF4rEaDkLqgnkKjQjAW5WWedw33Dj60JA7C9OKg2gtJYj-D7x7tyJ1U");'></div></div>
+</div>
+</section>
+<section>
+<h2 class="text-3xl font-bold text-center mb-12 text-stone-900 dark:text-stone-100">Our Process</h2>
+<div class="relative max-w-2xl mx-auto">
+<div aria-hidden="true" class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/20 dark:bg-primary/40"></div>
+<div class="space-y-16">
+<div class="relative flex items-center">
+<div class="w-1/2 pr-8 text-right">
+<h3 class="text-xl font-bold text-stone-900 dark:text-stone-100">Sketch</h3>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 bg-background-light dark:bg-background-dark p-2 rounded-full border-2 border-primary/20 dark:border-primary/40">
+<svg class="icon text-primary" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM51.31,160,136,75.31,152.69,92,68,176.68ZM48,179.31,76.69,208H48Zm48,25.38L79.31,188,164,103.31,180.69,120Zm96-96L147.31,64l24-24L216,84.68Z"></path></svg>
+</div>
+<div class="w-1/2 pl-8"></div>
+</div>
+<div class="relative flex items-center">
+<div class="w-1/2 pr-8"></div>
+<div class="absolute left-1/2 -translate-x-1/2 bg-background-light dark:bg-background-dark p-2 rounded-full border-2 border-primary/20 dark:border-primary/40">
+<svg class="icon text-primary" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M223.68,66.15,135.68,18h0a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32h0l80.34,44L128,120,47.66,76ZM40,90l80,43.78v85.79L40,175.82Zm96,129.57V133.82L216,90v85.78Z"></path></svg>
+</div>
+<div class="w-1/2 pl-8 text-left"><h3 class="text-xl font-bold text-stone-900 dark:text-stone-100">CAD</h3></div>
+</div>
+<div class="relative flex items-center">
+<div class="w-1/2 pr-8 text-right"><h3 class="text-xl font-bold text-stone-900 dark:text-stone-100">Render</h3></div>
+<div class="absolute left-1/2 -translate-x-1/2 bg-background-light dark:bg-background-dark p-2 rounded-full border-2 border-primary/20 dark:border-primary/40">
+<svg class="icon text-primary" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"></path></svg>
+</div>
+<div class="w-1/2 pl-8"></div>
+</div>
+<div class="relative flex items-center">
+<div class="w-1/2 pr-8"></div>
+<div class="absolute left-1/2 -translate-x-1/2 bg-background-light dark:bg-background-dark p-2 rounded-full border-2 border-primary/20 dark:border-primary/40">
+<svg class="icon text-primary" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M235.33,116.72,139.28,20.66a16,16,0,0,0-22.56,0l-96,96.06a16,16,0,0,0,0,22.56l96.05,96.06h0a16,16,0,0,0,22.56,0l96.05-96.06a16,16,0,0,0,0-22.56ZM128,224h0L32,128,128,32,224,128Z"></path></svg>
+</div>
+<div class="w-1/2 pl-8 text-left"><h3 class="text-xl font-bold text-stone-900 dark:text-stone-100">Final Product</h3></div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-3xl font-bold text-center mb-12 text-stone-900 dark:text-stone-100">Services</h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all">
+<svg class="icon text-primary" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM51.31,160,136,75.31,152.69,92,68,176.68ZM48,179.31,76.69,208H48Zm48,25.38L79.31,188,164,103.31,180.69,120Zm96-96L147.31,64l24-24L216,84.68Z"></path></svg>
+<h3 class="text-lg font-bold text-stone-900 dark:text-stone-100">Custom Design</h3>
+<p class="text-sm text-stone-600 dark:text-stone-400">Bespoke jewellery design tailored to your vision.</p>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all">
+<svg class="icon text-primary" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M223.68,66.15,135.68,18h0a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32h0l80.34,44L128,120,47.66,76ZM40,90l80,43.78v85.79L40,175.82Zm96,129.57V133.82L216,90v85.78Z"></path></svg>
+<h3 class="text-lg font-bold text-stone-900 dark:text-stone-100">CAD Modelling</h3>
+<p class="text-sm text-stone-600 dark:text-stone-400">Precision CAD models for manufacturing.</p>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all">
+<svg class="icon text-primary" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"></path></svg>
+<h3 class="text-lg font-bold text-stone-900 dark:text-stone-100">3D Rendering</h3>
+<p class="text-sm text-stone-600 dark:text-stone-400">High-quality 3D renders for visualization.</p>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all">
+<svg class="icon text-primary" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M214.67,72H200V40a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8V72H41.33C27.36,72,16,82.77,16,96v80a8,8,0,0,0,8,8H56v32a8,8,0,0,0,8,8H192a8,8,0,0,0,8-8V184h32a8,8,0,0,0,8-8V96C240,82.77,228.64,72,214.67,72ZM72,48H184V72H72ZM184,208H72V160H184Zm40-40H200V152a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8v16H32V96c0-4.41,4.19-8,9.33-8H214.67c5.14,0,9.33,3.59,9.33,8Zm-24-52a12,12,0,1,1-12-12A12,12,0,0,1,200,116Z"></path></svg>
+<h3 class="text-lg font-bold text-stone-900 dark:text-stone-100">Prototyping</h3>
+<p class="text-sm text-stone-600 dark:text-stone-400">Rapid prototyping for design validation.</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-3xl font-bold text-center mb-12 text-stone-900 dark:text-stone-100">Testimonials</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center text-center p-6 bg-transparent">
+<p class="text-stone-600 dark:text-stone-400 italic mb-4">"LuxeCAD brought my dream engagement ring to life. The CAD renders were stunning, and the final product exceeded my expectations."</p>
+<p class="font-bold text-primary">- Sarah</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-transparent">
+<p class="text-stone-600 dark:text-stone-400 italic mb-4">"The CAD modelling service was precise and efficient. The team was professional and delivered high-quality results."</p>
+<p class="font-bold text-primary">- David</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-transparent">
+<p class="text-stone-600 dark:text-stone-400 italic mb-4">"The 3D renders were incredibly realistic, helping me visualize my custom earrings before production. Highly recommend!"</p>
+<p class="font-bold text-primary">- Emily</p>
+</div>
+</div>
+</section>
+<section>
+<div class="max-w-xl mx-auto text-center">
+<h2 class="text-3xl font-bold mb-4 text-stone-900 dark:text-stone-100">Contact Us</h2>
+<p class="text-stone-600 dark:text-stone-400 mb-8">Ready to bring your vision to life? Get in touch with us today.</p>
+<form class="space-y-4">
+<input class="form-input w-full p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-colors placeholder:text-stone-500 dark:placeholder:text-stone-400" placeholder="Your Name" type="text"/>
+<input class="form-input w-full p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-colors placeholder:text-stone-500 dark:placeholder:text-stone-400" placeholder="Your Email" type="email"/>
+<textarea class="form-textarea w-full p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-colors placeholder:text-stone-500 dark:placeholder:text-stone-400" placeholder="Your Message" rows="5"></textarea>
+<button class="w-full px-8 py-4 text-base font-bold rounded-lg bg-primary text-background-dark hover:opacity-90 transition-opacity" type="submit">Submit</button>
+</form>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30">
+<div class="container mx-auto px-6 py-8 text-center text-sm text-stone-600 dark:text-stone-400">
+<p>© 2024 LuxeCAD. All rights reserved.</p>
+</div>
+</footer>
+</div>
+
+</body></html>
